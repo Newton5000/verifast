@@ -1,0 +1,189 @@
+/* Styles for the Search Bar */
+.search-bar {
+  margin-top: 20px; /* Adds space above the search bar */
+  position: relative; /* Enables positioning of child elements */
+}
+
+.search-bar input {
+  width: calc(100% - 40px); /* Adjusted width for the button */
+  padding: 10px; /* Padding for the input */
+  border: 1px solid #ccc; /* Border styling */
+  border-radius: 20px; /* Rounded corners for the input */
+}
+
+.search-bar button.search-button {
+  position: absolute; /* Absolute positioning to overlay the button */
+  right: 0; /* Positioned to the right */
+  top: 0; /* Positioned to the top */
+  padding: 10px; /* Padding for the button */
+  border: none; /* No border for the button */
+  background-color: #007bff; /* Button background color */
+  color: #fff; /* Text color for the button */
+  border-radius: 0 20px 20px 0; /* Rounded corners for the button */
+  cursor: pointer; /* Set cursor to pointer for interaction */
+  transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+.search-bar button.search-button:hover {
+  background-color: #0056b3; /* Background color on hover */
+}
+
+/* General Styles for the Body and Header */
+body {
+  font-family: "Arial", sans-serif; /* Font styles for the body */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  background-color: #f8f8f8; /* Set a background color for the body */
+}
+
+.fancy-header {
+  background-color: #333; /* Header background color */
+  color: #fff; /* Text color for the header */
+  padding: 20px; /* Padding for the header */
+  display: flex; /* Enable flexbox layout */
+  justify-content: space-between; /* Space between items in the header */
+  align-items: center; /* Center items vertically in the header */
+}
+
+/* Styles for the Logo and Navigation */
+.logo {
+  font-size: 24px; /* Font size for the logo */
+  font-weight: bold; /* Bold font weight for the logo */
+  color: #12f41d; /* Text color for the logo */
+}
+
+.main-navigation ul {
+  list-style: none; /* Remove default list styling */
+  display: flex; /* Enable flexbox layout for navigation items */
+  margin: 0; /* Remove default margin for the navigation */
+  padding: 0; /* Remove default padding for the navigation */
+}
+
+.main-navigation li {
+  margin-right: 20px; /* Margin between navigation items */
+}
+
+.main-navigation a {
+  text-decoration: none; /* Remove default text decoration for navigation links */
+  color: #ccc; /* Default text color for navigation links */
+  font-weight: bold; /* Bold font weight for navigation links */
+  transition: color 0.3s ease; /* Smooth transition for text color */
+}
+
+.main-navigation a:hover {
+  color: #fff; /* Text color on hover for navigation links */
+}
+
+/* Styles for User Actions */
+.user-actions a {
+  text-decoration: none; /* Remove default text decoration for user actions links */
+  color: #fff; /* Text color for user actions links */
+  margin-right: 10px; /* Margin between user actions links */
+  padding: 8px 16px; /* Padding for user actions links */
+  border-radius: 5px; /* Rounded corners for user actions links */
+  transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+.user-actions a.btn-primary {
+  background-color: #12f41d; /* Background color for primary user action button */
+}
+
+.user-actions a:hover {
+  background-color: #555; /* Background color on hover for user actions links */
+}
+
+/* Styles for Wrapper, Sidebar, and Main Content */
+.wrapper {
+  display: flex; /* Enable flexbox layout for the wrapper */
+}
+
+.sidebar {
+  width: 250px; /* Width of the sidebar */
+  background-color: #555; /* Sidebar background color */
+  color: #fff; /* Text color for the sidebar */
+  padding: 20px; /* Padding for the sidebar */
+}
+
+.sidebar h2 {
+  font-size: 20px; /* Font size for sidebar headings */
+}
+
+.sidebar ul {
+  list-style: none; /* Remove default list styling for sidebar lists */
+  padding: 0; /* Remove default padding for sidebar lists */
+  margin: 20px 0; /* Margin for sidebar lists */
+}
+
+.sidebar li {
+  margin-bottom: 10px; /* Margin between sidebar list items */
+}
+
+.sidebar a {
+  text-decoration: none; /* Remove default text decoration for sidebar links */
+  color: #fff; /* Text color for sidebar links */
+  font-weight: bold; /* Bold font weight for sidebar links */
+}
+
+.main-content {
+  flex-grow: 1; /* Allow main content to grow within the flex layout */
+  padding: 20px; /* Padding for the main content */
+}
+
+/* New styles for Product Cards */
+.product-card {
+  border: 1px solid #ccc; /* Border for the product card */
+  border-radius: 8px; /* Rounded corners for the product card */
+  padding: 16px; /* Padding for the product card */
+  margin: 16px; /* Margin for the product card */
+  width: 200px; /* Width of the product card */
+  text-align: center; /* Center text within the product card */
+}
+
+.product-card img {
+  max-width: 100%; /* Maximum width for product card images */
+  height: auto; /* Maintain aspect ratio for product card images */
+  border-bottom: 1px solid #ccc; /* Border for the bottom of the product card image */
+  margin-bottom: 8px; /* Margin between product card image and text */
+}
+
+.product-card h2 {
+  font-size: 18px; /* Font size for product card headings */
+  margin-bottom: 8px; /* Margin between product card heading and description */
+}
+
+.product-card p {
+  font-size: 14px; /* Font size for product card description */
+  color: #555; /* Text color for product card description */
+  margin-bottom: 8px; /* Margin between product card description and price */
+}
+
+.product-card .price {
+  font-size: 16px; /* Font size for product card price */
+  font-weight: bold; /* Bold font weight for product card price */
+  color: #007bff; /* Text color for product card price */
+  display: block; /* Display as a block element */
+  margin-bottom: 8px; /* Margin between price and "Add to Cart" button */
+}
+
+.product-card button {
+  background-color: #007bff; /* Background color for "Add to Cart" button */
+  color: #fff; /* Text color for "Add to Cart" button */
+  border: none; /* No border for "Add to Cart" button */
+  padding: 8px 16px; /* Padding for "Add to Cart" button */
+  border-radius: 4px; /* Rounded corners for "Add to Cart" button */
+  cursor: pointer; /* Set cursor to pointer for interaction */
+  font-size: 14px; /* Font size for "Add to Cart" button */
+  transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+.product-card button:hover {
+  background-color: #0056b3; /* Background color on hover for "Add to Cart" button */
+}
+
+/* Styles for Footer */
+footer {
+  background-color: #333; /* Footer background color */
+  color: #fff; /* Text color for the footer */
+  padding: 10px; /* Padding for the footer */
+  text-align: center; /* Center text within the footer */
+}
